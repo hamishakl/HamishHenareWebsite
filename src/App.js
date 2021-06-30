@@ -1,12 +1,13 @@
 import './App.css';
+import { ChakraProvider } from "@chakra-ui/react"
+import Navbar from './components/Navbar';
 
-function App() {
+
+function MyApp({ Component, pageProps }) {
   return (
-    <div className="App">
-      <h1>Hello Hamish Henare</h1>
-
-    </div>
-  );
+    <ChakraProvider>
+      <Navbar />
+    </ChakraProvider>
+  )
 }
-
-export default App;
+export default MyApp;
