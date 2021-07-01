@@ -6,11 +6,13 @@ const navbarChange = () => {
           links[i].style.color = a;
       }
   }
-  if (window.scrollY > 518) {
+  if (window.scrollY > window.innerHeight) {
     navbar.style.backgroundColor = "#f5f0e1";
     navbar.style.color = "black";
+    navbar.style.borderColor = "black"
     linkColor('black')
 } else {
+    navbar.style.borderColor = "white"
     navbar.style.color = "white";
     navbar.style.backgroundColor = "#1e3d59";
 	linkColor('white')
