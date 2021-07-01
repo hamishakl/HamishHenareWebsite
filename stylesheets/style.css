@@ -7,27 +7,27 @@
     src: url('../assets/fonts/Futura-Normal.woff') format('woff'), /* Pretty Modern Browsers */
   }
 
-body {
-}
-
 #navbar {
     font-family: 'Futura';
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    transition: ease-in-out;
+    transition-duration: 100ms;
     color: white;
-    background-color: rgb(31, 31, 121);
     height: 10vh;
+    min-width: 100vw;
     max-width: 100vw;
+    position: fixed;
+    border-bottom: 1.2px solid #ffffff;
 }
 
 #link-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 50%;
 }
 
@@ -38,5 +38,28 @@ body {
 
 .wrapper {
     min-height: 100vh;
-    background-color: rgb(31, 31, 121);
+    background-color: #1e3d59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-family: 'Futura';
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.wrapper h1 {
+    font-size: 2.3em;
+    line-height: 1.2em;
+}
+
+#work-section {
+    background-color: #f5f0e1;
+}
+
+header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
 }
