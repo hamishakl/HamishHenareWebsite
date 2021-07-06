@@ -16,6 +16,9 @@ const navbarChange = () => {
   );
 
   const vh2 = vh * 2;
+  const about = vh * 3
+  const contact = vh * 4
+  const footer = vh * 5
   const navbar = document.getElementById("navbar");
   const links = document.getElementsByClassName("navbar-link"); // get all links
   const linkColor = (a) => {
@@ -24,16 +27,25 @@ const navbarChange = () => {
     }
   };
   if (y >= vh && y < vh2) {
+    navbar.style.backgroundColor = "#ffc13b";
+    
+    navbar.style.color = "black";
+    navbar.style.borderColor = "black";
+    linkColor("black");
+  } 
+  else if (y > vh2 && y < about ){
     navbar.style.backgroundColor = "#f5f0e1";
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
-  } else if (y > vh2) {
-    navbar.style.borderColor = "white";
-    navbar.style.color = "white";
-    navbar.style.backgroundColor = "#1e3d59";
-    linkColor("white");
-  } else {
+  } 
+  else if (y > about && y < contact) {
+    navbar.style.backgroundColor = "#f5f0e1";
+    navbar.style.color = "black";
+    navbar.style.borderColor = "black";
+    linkColor("black");
+  } 
+  else {
     navbar.style.borderColor = "white";
     navbar.style.color = "white";
     navbar.style.backgroundColor = "#1e3d59";
@@ -58,3 +70,5 @@ const navbarChange = () => {
 window.onscroll = () => {
   navbarChange(), heroChange();
 };
+
+//hey bro, i havent had any time to work on the bot as im busy with client websites. i might have some time friday to publish the avg down a couple times then stop? atm its just been running the fiverr dudes script with no avg down since we stopped it a few weeks back.
