@@ -162,6 +162,8 @@ font-style: italic;
   color: black;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .work-grid {
@@ -344,6 +346,7 @@ input:focus,
 
 #dribble-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
 }

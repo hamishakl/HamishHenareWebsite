@@ -3,3 +3,9 @@
         background-attachment: initial;
       }
  }
+
+@media (max-width: 1024px) {
+  .dribble-link {
+    width: 100%;
+  }
+}
