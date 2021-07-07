@@ -32,20 +32,24 @@ const navbarChange = () => {
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
+    navbar.style.opacity = "1"
   } 
   else if (y > vh2 && y < about ){
     navbar.style.backgroundColor = "#ffc13b";
+    navbar.style.opacity = "0.7"
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
   } 
   else if (y > about && y < contact) {
+    navbar.style.opacity = "1"
     navbar.style.backgroundColor = "#f5f0e1";
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
   } 
   else {
+    navbar.style.opacity = "1"
     navbar.style.borderColor = "white";
     navbar.style.color = "white";
     navbar.style.backgroundColor = "#1e3d59";
