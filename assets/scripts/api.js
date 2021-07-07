@@ -13,7 +13,7 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     if (data.length > 0) {
       data.forEach((element) => {
         console.log(element);
-        dribbleWrapper.innerHTML += `<a href="${element.html_url}"><div class="dribble-item"><h1 class="dribble-text">${element.description}</h1>+<img class="dribble-image" src="${element.images.hidpi}"/></div></a>`;
+        dribbleWrapper.innerHTML += `<a class="dribble-link" href="${element.html_url}"><div class="dribble-item"><p class="dribble-text">${element.title}</p><img class="dribble-image" src="${element.images.hidpi}"/></div></a>`;
       });
     }
   })

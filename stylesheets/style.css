@@ -342,3 +342,42 @@ input:focus,
   width: 100%;
 }
 
+#dribble-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: auto;
+}
+#dribble-wrapper .dribble-item {
+  background: #ffc13b;
+  position: relative;
+  display: block;
+  width: 40%;
+  color: white;
+  text-decoration: none;
+}
+#dribble-wrapper .dribble-item:hover .dribble-image {
+  opacity: 0.1;
+}
+#dribble-wrapper .dribble-item:hover .dribble-text {
+  opacity: 1;
+}
+#dribble-wrapper .dribble-item .dribble-text {
+  position: absolute;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#dribble-wrapper .dribble-item .dribble-image {
+  display: block;
+  max-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dribble-link {
+  max-width: 100%;
+}
