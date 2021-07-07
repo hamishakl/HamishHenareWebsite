@@ -17,7 +17,7 @@ const navbarChange = () => {
 
   const vh2 = vh * 2;
   const about = vh * 3
-  const contact = vh * 5
+  const contact = vh * 4
   const footer = vh * 5
   const navbar = document.getElementById("navbar");
   const links = document.getElementsByClassName("navbar-link"); // get all links

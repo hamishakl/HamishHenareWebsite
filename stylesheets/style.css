@@ -309,3 +309,36 @@ text {
   border-style: solid;
   border-width: 4px;
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 50%;
+  color: white;
+}
+
+input {
+  -webkit-appearance: none;
+  background-color: transparent;
+  fill: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1.2px solid #ffffff;
+  color: white;
+  text-align: center;
+}
+
+input:focus,
+.form-control:active {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 1.2px solid #ffffff;
+  background-color: transparent;
+  fill: none;
+  width: 100%;
+}
