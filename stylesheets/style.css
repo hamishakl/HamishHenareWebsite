@@ -1,11 +1,110 @@
-@font-face {
-  font-family: "Futura-Heavy";
-  src: url("../assets/fonts/Futura-Heavy.woff") format("woff"); /* Pretty Modern Browsers */
-}
-@font-face {
-  font-family: "Futura";
-  src: url("../assets/fonts/Futura-Normal.woff") format("woff"); /* Pretty Modern Browsers */
-}
+/* Futura PT Medium
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 500;
+
+font-style: normal;
+
+
+Futura PT Heavy
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Futura PT Heavy Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Futura PT Light Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 300;
+
+font-style: italic;
+
+
+Futura PT Book
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Futura PT Book Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Futura PT Light
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 300;
+
+font-style: normal;
+
+
+Futura PT Extra Bold
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 800;
+
+font-style: normal;
+
+
+Futura PT Extra Bold Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 800;
+
+font-style: italic;
+
+
+Futura PT Demi
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 600;
+
+font-style: normal;
+
+
+Futura PT Bold
+
+font-family: futura-pt-bold, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Futura PT Bold Oblique
+
+font-family: futura-pt-bold, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+ */
 
 #navbar {
   font-family: "Futura";
@@ -35,6 +134,9 @@
 .navbar-link {
   color: white;
   text-decoration: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .wrapper {
@@ -85,18 +187,21 @@
   transition: ease-in-out;
   transition-duration: 100ms;
   margin-top: 20vh;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #footer-section {
   background-color: #1e3d59;
 }
 
-#about-section {
+#drawing-section {
   background-color: #ffc13b;
   color: black;
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url("../assets/images/Untitled_Artwork\ 4.png");
 }
 
@@ -112,7 +217,7 @@ text {
 
 #intro-section div {
   background-image: url("../assets/images/Untitled_Artwork\ 3.png");
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-position: center;
   width: 120%;
@@ -124,4 +229,83 @@ text {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+}
+
+#portrait {
+  width: 50%;
+  height: 50%;
+}
+
+#about-section {
+  background-color: #f5f0e1;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+#about-text-wrapper h2 {
+  font-family: futura-pt, sans-serif;
+
+  font-weight: 600;
+
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+#about-text-wrapper p {
+  font-family: futura-pt, sans-serif;
+
+  font-weight: 300;
+
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#about-content-wrapper {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 50%;
+  overflow: hidden;
+}
+
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+#footer-bottom-section {
+  background-image: url("../assets/images/footer-illustration.png");
+  background-size: contain;
+  background-position: center;
+  height: 40vh;
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e3d59;
+  width: 40%;
+  height: 20%;
+  z-index: 1;
+  border-color: #f5f0e1;
+  border-style: solid;
+  border-width: 4px;
 }

@@ -17,7 +17,7 @@ const navbarChange = () => {
 
   const vh2 = vh * 2;
   const about = vh * 3
-  const contact = vh * 4
+  const contact = vh * 5
   const footer = vh * 5
   const navbar = document.getElementById("navbar");
   const links = document.getElementsByClassName("navbar-link"); // get all links
@@ -27,14 +27,14 @@ const navbarChange = () => {
     }
   };
   if (y >= vh && y < vh2) {
-    navbar.style.backgroundColor = "#ffc13b";
+    navbar.style.backgroundColor = "#f5f0e1";
     
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
   } 
   else if (y > vh2 && y < about ){
-    navbar.style.backgroundColor = "#f5f0e1";
+    navbar.style.backgroundColor = "#ffc13b";
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
