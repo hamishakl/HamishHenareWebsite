@@ -164,6 +164,8 @@ font-style: italic;
   align-items: center;
   padding-left: 0;
   padding-right: 0;
+  height: fit-content;
+  min-height: 0;
 }
 
 .work-grid {
@@ -316,7 +318,7 @@ text {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
+  height: 60vh;
   width: 50%;
   color: white;
 }
@@ -389,4 +391,9 @@ input:focus,
 
 .dribble-link {
   width: 50%;
+}
+
+#border {
+  border-top: 1.5px solid rgb(0, 0, 0);
+  width: 100%;
 }
