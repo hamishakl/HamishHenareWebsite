@@ -1,13 +1,3 @@
-const heroChange = () => {
-  const heading = document.getElementById("hero-text");
-  const yPosition = window.scrollY;
-  if (yPosition > 250) {
-    heading.style.color = "#1e3d59";
-  } else if (yPosition < 200) {
-    heading.style.color = "white";
-  }
-};
-
 const navbarChange = () => {
   const y = window.scrollY;
   const vh = Math.max(
@@ -32,28 +22,23 @@ const navbarChange = () => {
     navbar.style.color = "black";
     navbar.style.borderColor = "black";
     linkColor("black");
-    navbar.style.opacity = "1"
+    navbar.style.opacity = "0.5"
   } 
   else if (y > vh2 && y < about ){
-    navbar.style.backgroundColor = "#ffc13b";
-    navbar.style.opacity = "0.7"
-    navbar.style.color = "black";
-    navbar.style.borderColor = "black";
-    linkColor("black");
-  } 
-  else if (y > about && y < contact) {
-    navbar.style.opacity = "1"
-    navbar.style.backgroundColor = "#f5f0e1";
-    navbar.style.color = "black";
-    navbar.style.borderColor = "black";
-    linkColor("black");
-  } 
-  else {
     navbar.style.opacity = "1"
     navbar.style.borderColor = "white";
     navbar.style.color = "white";
     navbar.style.backgroundColor = "#1e3d59";
     linkColor("white");
+  } 
+  else if (y > about && y < contact) {
+  } 
+  else {
+    navbar.style.opacity = "1"
+    navbar.style.backgroundColor = "#f5f0e1";
+    navbar.style.color = "black";
+    navbar.style.borderColor = "black";
+    linkColor("black");
   }
 };
 
@@ -72,7 +57,7 @@ const navbarChange = () => {
 // });
 
 window.onscroll = () => {
-  navbarChange(), heroChange();
+  navbarChange();
 };
 
 //hey bro, i havent had any time to work on the bot as im busy with client websites. i might have some time friday to publish the avg down a couple times then stop? atm its just been running the fiverr dudes script with no avg down since we stopped it a few weeks back.

@@ -273,11 +273,11 @@ text {
 }
 
 #about-content-wrapper {
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  height: 50%;
+  height: 60vh;
   overflow: hidden;
 }
 
