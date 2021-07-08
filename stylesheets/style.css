@@ -237,7 +237,7 @@ text {
 }
 
 #portrait {
-  width: 20%;
+  width: 40%;
 }
 
 #about-section {
@@ -252,6 +252,7 @@ text {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  margin-bottom: 2em;
 }
 
 #about-text-wrapper h2 {
@@ -275,10 +276,10 @@ text {
 #about-content-wrapper {
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
-  height: 60vh;
-  overflow: hidden;
+  height: 70vh;
+  margin-top: 2em;
 }
 
 #footer-section {

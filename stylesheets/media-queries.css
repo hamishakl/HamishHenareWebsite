@@ -8,4 +8,27 @@
   .dribble-link {
     width: 100%;
   }
+  .dribble-button{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    z-index: 1;
+  }
+
+  .dribble-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .dribble-link-button {
+    background-color: #ffc13b;
+    margin-top: 2.5em;
+  }
+  .url-link-button {
+    background-color: #ff6e40;
+  }
+
 }

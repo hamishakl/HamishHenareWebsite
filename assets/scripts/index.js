@@ -60,4 +60,3 @@ window.onscroll = () => {
   navbarChange();
 };
 
-//hey bro, i havent had any time to work on the bot as im busy with client websites. i might have some time friday to publish the avg down a couple times then stop? atm its just been running the fiverr dudes script with no avg down since we stopped it a few weeks back.
