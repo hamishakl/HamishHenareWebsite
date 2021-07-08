@@ -12,23 +12,8 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     if (data.length > 0) {
       data.forEach((element) => {
         console.log(element);
-        dribbleWrapper.innerHTML += `
-        <a class="dribble-link" href="${element.html_url}">
-            <div class="dribble-item">
-                <p class="dribble-text">${element.title}</p>
-                <img class="dribble-image" src="${element.images.hidpi}"/>
-                <div class="dribble-button url-link-button"></div>
-                <div class="dribble-button dribble-link-button"</div>
-            </div>
-        </a>
-        `;
-        // const dribbleShots = document.getElementsByClassName('dribble-image')
-        // const dribbleShotHeight = dribbleShots[0].height
-        // const dribbleLink = document.getElementsByClassName('dribble-link-button')
-        // for (var i = 0; i < dribbleShots.length; i++) {
-        //     dribbleLink[i].style.bottom = `"${dribbleShotHeight}"`;
-        //     console.log(dribbleLink[i].style)
-        //   }
+        dribbleWrapper.innerHTML += webOrPrint(element)
+        
       });
     }
   })
@@ -40,3 +25,33 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
   window.addEventListener('load', function () {
     
 })
+
+const webOrPrint = (element) => {
+  const tags = element.tags
+    for (let i = 0; i < tags.length; i++) {
+        if (tags.includes('web') ) {
+          console.log('issa website')
+            return `
+            <a class="dribble-link" href="${element.html_url}">
+                <div class="dribble-item">
+                    <p class="dribble-text">${element.title}</p>
+                    <img class="dribble-image" src="${element.images.hidpi}"/>
+                    <div class="dribble-button url-link-button"></div>
+                    <div class="dribble-button dribble-link-button"</div>
+                    </div>
+                    </a>
+                    `
+                  } else {
+                    return `
+                    <a class="dribble-link" href="${element.html_url}">
+                <div class="dribble-item">
+                    <p class="dribble-text">${element.title}</p>
+                    <img class="dribble-image" src="${element.images.hidpi}"/>
+                    <div class="dribble-button url-link-button"></div>
+                    </div>
+                    </a>
+            `
+        }
+        
+    }
+}

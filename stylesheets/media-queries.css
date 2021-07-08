@@ -16,6 +16,11 @@
     z-index: 1;
   }
 
+  .dribble-item {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
   .dribble-link {
     display: flex;
     flex-direction: column;
@@ -24,11 +29,13 @@
   }
 
   .dribble-link-button {
-    background-color: #ffc13b;
+    background-color: #ff6e40;
     margin-top: 2.5em;
+    z-index: 2;
   }
   .url-link-button {
-    background-color: #ff6e40;
+    background-color: #ffc13b;
+    z-index: 2;
   }
 
 }
