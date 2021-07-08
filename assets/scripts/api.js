@@ -12,8 +12,7 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     if (data.length > 0) {
       data.forEach((element) => {
         console.log(element);
-        dribbleWrapper.innerHTML += webOrPrint(element)
-        
+        dribbleWrapper.innerHTML += webOrPrint(element);
       });
     }
   })
@@ -21,18 +20,17 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     // There was an error
     console.warn("Something went wrong.", err);
   });
-  
-  window.addEventListener('load', function () {
-    
-})
 
+window.addEventListener("load", function () {});
+const mql = window.matchMedia('(hover: hover)');
+console.log(mql.matches)
 const webOrPrint = (element) => {
-  const tags = element.tags
-    for (let i = 0; i < tags.length; i++) {
-        if (tags.includes('web') ) {
-          console.log('issa website')
-            return `
-            <a class="dribble-link" href="${element.html_url}">
+  const tags = element.tags;
+  for (let i = 0; i < tags.length; i++) {
+    if (tags.includes("web")) {
+      if (mql.matches === false) {
+        return `
+            <div class="dribble-link" href="${element.html_url}">
                 <div class="dribble-item">
                     <p class="dribble-text">${element.title}</p>
                     <img class="dribble-image" src="${element.images.hidpi}"/>
@@ -41,22 +39,46 @@ const webOrPrint = (element) => {
                     </div>
                     <div class="dribble-button dribble-link-button">info
                     </div>
-                    </a>
+                    </div>
                     `
-                  } else {
-                    return `
-                    <a class="dribble-link" href="${element.html_url}">
-                <div class="dribble-item">
-                    <p class="dribble-text">${element.title}</p>
-                    <img class="dribble-image" src="${element.images.hidpi}"/>
-                    <div class="dribble-button url-link-button">
-                      url
-                    </div>
-                    </div>
-                    </a>
-            `
+      } else {
+        return  `
+        <a class="dribble-link" href="${element.html_url}">
+            <div class="dribble-item">
+                <p class="dribble-text">${element.title}</p>
+                <img class="dribble-image" src="${element.images.hidpi}"/>
+                <div class="dribble-button dribble-link-button">info
+                </div>
+                </a>
+                `
+      }
+    } else {
+      if (mql.matches === false) {
+        return `
+        <div class="dribble-link" href="${element.html_url}">
+            <div class="dribble-item">
+                <p class="dribble-text">${element.title}</p>
+                <img class="dribble-image" src="${element.images.hidpi}"/>
+                <div class="dribble-button url-link-button">
+                url
+                </div>
+                <div class="dribble-button dribble-link-button">info
+                </div>
+                </div>
+                `
+              } else {
+                return `
+                            <a class="dribble-link" href="${element.html_url}">
+                        <div class="dribble-item">
+                            <p class="dribble-text">${element.title}</p>
+                            <img class="dribble-image" src="${element.images.hidpi}"/>
+                            <div class="dribble-button url-link-button">
+                              url
+                            </div>
+                            </div>
+                            </a>
+                    `
+          }
         }
-        
-    }
-}
-
+        }
+      }
