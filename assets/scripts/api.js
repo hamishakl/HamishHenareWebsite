@@ -36,8 +36,10 @@ const webOrPrint = (element) => {
                 <div class="dribble-item">
                     <p class="dribble-text">${element.title}</p>
                     <img class="dribble-image" src="${element.images.hidpi}"/>
-                    <div class="dribble-button url-link-button"></div>
-                    <div class="dribble-button dribble-link-button"</div>
+                    <div class="dribble-button url-link-button">
+                    url
+                    </div>
+                    <div class="dribble-button dribble-link-button">info
                     </div>
                     </a>
                     `
@@ -47,7 +49,9 @@ const webOrPrint = (element) => {
                 <div class="dribble-item">
                     <p class="dribble-text">${element.title}</p>
                     <img class="dribble-image" src="${element.images.hidpi}"/>
-                    <div class="dribble-button url-link-button"></div>
+                    <div class="dribble-button url-link-button">
+                      url
+                    </div>
                     </div>
                     </a>
             `
@@ -55,3 +59,4 @@ const webOrPrint = (element) => {
         
     }
 }
+

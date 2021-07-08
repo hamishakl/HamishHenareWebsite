@@ -10,11 +10,18 @@
   }
   .dribble-button{
     position: absolute;
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     border-radius: 2em;
     z-index: 1;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+
 
   .dribble-item {
     justify-content: flex-end;
@@ -30,7 +37,7 @@
 
   .dribble-link-button {
     background-color: #ff6e40;
-    margin-top: 2.5em;
+    margin-top: 4em;
     z-index: 2;
   }
   .url-link-button {
@@ -39,3 +46,4 @@
   }
 
 }
+
