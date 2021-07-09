@@ -5,6 +5,10 @@
  }
 
 @media (max-width: 1024px) {
+  .dribble-wrapper{
+    position: relative;
+  }
+
   .dribble-link {
     width: 100%;
   }
@@ -20,12 +24,15 @@
     align-items: center;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    left: 80%;
+    top: 10%;
+    text-decoration: none;
+    font-weight: bold;
       }
 
-
   .dribble-item {
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .dribble-link {
@@ -36,12 +43,12 @@
   }
 
   .dribble-link-button {
-    background-color: #ff6e40;
     margin-top: 4em;
+    background-color: #c73bff;
     z-index: 2;
   }
   .url-link-button {
-    background-color: #ffc13b;
+    background-color: #ff6e40;
     z-index: 2;
   }
 

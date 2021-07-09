@@ -106,29 +106,43 @@ font-weight: 700;
 font-style: italic;
  */
 
-#navbar {
+#navbar-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Futura";
+  height: 10vh;
+  width: 100vw;
+  max-width: 100vw;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+  border-bottom: 1.2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#link-wrapper {
+  margin-top: 2px;
+  padding: 0em 2em 0 2em;
+  border-top: 1.2px solid #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  transition: ease-in-out;
-  transition-duration: 100ms;
-  color: white;
-  height: 10vh;
-  min-width: 100vw;
-  max-width: 100vw;
-  position: fixed;
-  border-bottom: 1.2px solid #ffffff;
-  z-index: 20;
-}
-
-#link-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+  width: 30%;
 }
 
 .navbar-link {
@@ -188,12 +202,11 @@ font-style: italic;
 }
 
 #hero-text {
-  transition: ease-in-out;
-  transition-duration: 100ms;
-  margin-top: 20vh;
-  font-family: futura-pt, sans-serif;
+  font-family: futura-pt-bold, sans-serif;
+
   font-weight: 700;
-  font-style: normal;
+
+  font-style: italic;
 }
 
 #footer-section {
@@ -212,11 +225,6 @@ font-style: italic;
 #contact-section {
   background-color: #f5f0e1;
   color: black;
-}
-
-text {
-  font-size: 70px;
-  fill: #000000;
 }
 
 #intro-section div {
@@ -251,17 +259,9 @@ text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   margin-bottom: 2em;
-}
-
-#about-text-wrapper h2 {
-  font-family: futura-pt, sans-serif;
-
-  font-weight: 600;
-
-  font-style: normal;
-  font-size: 1.5em;
+  width: 75%;
 }
 
 #about-text-wrapper p {
@@ -402,3 +402,18 @@ input:focus,
 .url-icon {
   fill: white;
 }
+
+#submit-button {
+  width: 10em;
+  font-family: futura-pt, sans-serif;
+
+  font-weight: 600;
+  color: white;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  padding: 1em;
+  border-radius: 3em;
+  border: white 2px solid;
+}
+input, button, submit { border:none; } 

@@ -14,13 +14,15 @@ fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
         dribbleWrapper.innerHTML += webOrPrint(element);
       });
     }
+      const imageHeight = document.getElementsByClassName("dribble-image")[0].height;
+      const imageHeight = document.getElementsByClassName("dribble-image")[0].height;
+      console.log(imageHeight)
   })
   .catch(function (err) {
     // There was an error
     console.warn("Something went wrong.", err);
   });
 
-window.addEventListener("load", function () {});
 const mql = window.matchMedia("(hover: hover)");
 const webOrPrint = (element) => {
   const tags = element.tags;
@@ -28,16 +30,16 @@ const webOrPrint = (element) => {
     if (tags.includes("web")) {
       if (mql.matches === false) {
         return `
+        <div class="dribble-wrapper">
+        <a href="${element.html_url}" class="dribble-button url-link-button">
+        info
+        </a>
                <div class="dribble-link" href="${element.html_url}">
                 <div class="dribble-item">
                 <p class="dribble-text">${element.title}</p>
                 <img class="dribble-image" src="${element.images.hidpi}"/>
-                <div class="dribble-button url-link-button">
-                info
                 </div>
-                <div class="dribble-button dribble-link-button">url
-                </div>
-                </div>
+        </div>
               `
       } else {
         return `
@@ -51,16 +53,16 @@ const webOrPrint = (element) => {
     } else {
       if (mql.matches === false) {
         return `
-                <div class="dribble-link" href="${element.html_url}">
+        <div class="dribble-wrapper">
+        <a href="${element.html_url}" class="dribble-button url-link-button">
+        info
+        </a>
+               <div class="dribble-link" href="${element.html_url}">
                 <div class="dribble-item">
                 <p class="dribble-text">${element.title}</p>
                 <img class="dribble-image" src="${element.images.hidpi}"/>
-                <div class="dribble-button url-link-button">
-                info
                 </div>
-                </div>
-                </div>
-                `
+        </div>`
       } else {
         return `
                 <a class="dribble-link" href="${element.html_url}">

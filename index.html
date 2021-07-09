@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/ali0bux.css" />
   </head>
   <body>
-    <header>
-      <nav id="navbar" class="navbar-top">
+    <header id="navbar-wrapper" class="navbar-top">
+      <nav id="navbar">
         <h4 id="logo">Hamish Henare</h4>
+        <div id="link-wrapper">
+
           <a href="#work-section" class="navbar-link">Work</a>
           <a href="" class="navbar-link">Contact</a>
+        </div>
       </nav>
     </header>
     <!-- <section class="wrapper" id="intro-section">
@@ -24,7 +27,9 @@
     <section class="wrapper" id="about-section">
       <div id="about-content-wrapper">
         <div id="about-text-wrapper">
-          <h1>Web Designer<br>Auckland, NZ.</h1>
+          <div id="border"></div>
+          <br />
+          <h1 id="hero-text">Web Designer<br>Auckland, NZ.</h1>
           <br />
           <div id="border"></div>
           <br />
@@ -63,7 +68,7 @@
           type="text"
           required
         />
-        <button type="submit">Submit</button>
+        <button id="submit-button" type="submit">Submit</button>
       </form>
       <div id="footer-bottom-section">
         <div id="footer-bottom-wrapper">
