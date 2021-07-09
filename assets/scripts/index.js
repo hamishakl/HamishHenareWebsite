@@ -43,9 +43,6 @@ const navbarChange = () => {
   }
 };
 
-
-
-
 window.onscroll = () => {
   navbarChange();
 };
