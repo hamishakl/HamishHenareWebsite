@@ -13,8 +13,6 @@ const apiLoad = () => {
           dribbleWrapper.innerHTML += webOrPrint(element);
         });
       }
-      console.log(imageHeight);
-      console.log(imageWidth);
     })
     .catch(function (err) {
       console.warn("Something went wrong.", err);
@@ -78,9 +76,11 @@ const webOrPrint = (element) => {
 const getDribbleDimensions = () => {
   const imageHeight =
         document.getElementsByClassName("dribble-image")[0].height;
+  const dribbleShotsAmount = document.getElementsByClassName('dribble-image').length
 
+  const arr = [imageHeight, dribbleShotsAmount]
 
-  return imageHeight
+  return arr
 }
 
 window.onload = () => {

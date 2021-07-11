@@ -4,8 +4,9 @@ const navbarChange = () => {
     document.documentElement.clientHeight || 0,
     window.innerHeight || 0
   );
-    const dribbleHeight = getDribbleDimensions()
-    const dribbleShotsLength = vh + (dribbleHeight*4)
+    const dribbleHeight = getDribbleDimensions()[0]
+    const dribbleShotsAmount = getDribbleDimensions()[1]
+    const dribbleShotsLength = vh + (dribbleHeight*dribbleShotsAmount)
   const vh2 = vh * 2;
   const about = vh * 3;
   const contact = vh * 4;
