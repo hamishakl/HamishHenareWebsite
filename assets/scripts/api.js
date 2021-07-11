@@ -40,10 +40,11 @@ const webOrPrint = (element) => {
       } else {
         return `
         <a class="dribble-link" href="${element.html_url}">
-        <div class="dribble-item">
-        <p class="dribble-text">${element.title}</p>
-        <img class="dribble-image" src="${element.images.hidpi}"/>
-        </a>
+                <div class="dribble-item">
+                <p class="dribble-text">${element.title}</p>
+                <img class="dribble-image" src="${element.images.hidpi}"/>
+                </div>
+                </a>
         `;
       }
     } else {
@@ -58,7 +59,8 @@ const webOrPrint = (element) => {
                 <p class="dribble-text">${element.title}</p>
                 <img class="dribble-image" src="${element.images.hidpi}"/>
                 </div>
-        </div>`;
+        </div>
+              `
       } else {
         return `
                 <a class="dribble-link" href="${element.html_url}">
