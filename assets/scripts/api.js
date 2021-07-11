@@ -13,10 +13,6 @@ const apiLoad = () => {
           dribbleWrapper.innerHTML += webOrPrint(element);
         });
       }
-      const imageHeight =
-        document.getElementsByClassName("dribble-image")[0].height;
-      const imageWidth =
-        document.getElementsByClassName("dribble-image")[0].width;
       console.log(imageHeight);
       console.log(imageWidth);
     })
@@ -75,10 +71,18 @@ const webOrPrint = (element) => {
                 </a>
               `;
       }
-    }
+    }ho
   }
 };
 
+const getDribbleDimensions = () => {
+  const imageHeight =
+        document.getElementsByClassName("dribble-image")[0].height;
+
+
+  return imageHeight
+}
+
 window.onload = () => {
-  apiLoad();
+  apiLoad()
 };

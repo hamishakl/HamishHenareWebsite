@@ -4,7 +4,8 @@ const navbarChange = () => {
     document.documentElement.clientHeight || 0,
     window.innerHeight || 0
   );
-
+    const dribbleHeight = getDribbleDimensions()
+    const dribbleShotsLength = vh + (dribbleHeight*4)
   const vh2 = vh * 2;
   const about = vh * 3;
   const contact = vh * 4;
@@ -12,11 +13,11 @@ const navbarChange = () => {
   const links = document.getElementsByClassName("navbar-link");
   const linkWrapper = document.getElementById("link-wrapper");
   const linkColor = (a) => {
-    for (var i = 0; i < links.length; i++) {
+    for (let i = 0; i < links.length; i++) {
       links[i].style.color = a;
     }
   };
-  if (y >= vh && y < vh2) {
+  if (y >= vh && y < dribbleShotsLength) {
     navbar.style.backgroundColor = "#f5f0e1";
     linkWrapper.style.borderTop = "1.2px solid black";
     navbar.style.color = "black";
