@@ -146,11 +146,18 @@ font-style: italic;
 }
 
 .navbar-link {
+  font-size: 1em;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: futura-pt, sans-serif;
-  font-weight: 300;
+  font-family: futura-pt-bold, sans-serif;
+
+  font-weight: 700;
+  
   font-style: italic;
+  outline: none;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 3em;
+  border: white 1.2px solid;
 }
 
 .wrapper {
@@ -282,6 +289,14 @@ font-style: italic;
   margin-top: 2em;
 }
 
+#logo {
+  font-family: futura-pt-bold, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+}
+
 #footer-section {
   display: flex;
   flex-direction: column;
@@ -289,6 +304,7 @@ font-style: italic;
   align-items: center;
   overflow: hidden;
   height: 100vh;
+  margin-bottom: 10vh;
 }
 
 #footer-section h4 {
@@ -482,10 +498,9 @@ input:focus,
   opacity: 1;
   height: 10vh;
   position: fixed;
-  width: 640px;
-  margin: 0% -320px;
-  left: 50%;
-  bottom: 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

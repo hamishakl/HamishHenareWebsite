@@ -11,11 +11,11 @@ const navbarChange = () => {
   const about = vh * 3;
   const navbar = document.getElementsByClassName("navbar");
   const links = document.getElementsByClassName("navbar-link");
-  const linkWrapper = document.getElementById("link-wrapper");
 
-  const linkColor = (a) => {
+  const linkColor = (a, b) => {
     for (let i = 0; i < links.length; i++) {
       links[i].style.color = a;
+      links[i].style.borderColor = b;
     }
   };
 
@@ -34,21 +34,18 @@ const navbarChange = () => {
     navColor("#f5f0e1", "black", "black", "1", 0);
   }
 
-  const afterVh = vh *1.02
-  console.log(afterVh)
-  console.log(dribbleShotsLength)
+  const afterVh = vh * 1.02;
 
-  if (footerY >= afterVh &&footerY < dribbleShotsLength) {
+  if (footerY >= afterVh && footerY < dribbleShotsLength) {
     navColor("#f5f0e1", "#f5f0e1", "black", "0.5", 1);
-    linkColor('black')
-  } else if (footerY > dribbleShotsLength){
+    linkColor("black", "#f5f0e1");
+  } else if (footerY > dribbleShotsLength) {
     navColor("#1e3d59", "white", "white", "1", 1);
-    linkColor('white')
+    linkColor("white", "white");
   } else {
     navColor("#f5f0e1", "black", "black", "1", 1);
-    linkColor('black')
+    linkColor("black", "black");
   }
-
 };
 
 window.onscroll = () => {
