@@ -46,7 +46,7 @@
     <section class="wrapper" id="footer-section">
       <div id="contact-form-wrapper">
         <h4>Let's chat!</h4>
-        <form action="" id="form">
+        <form action="/assets/scripts/nodemailer.js" method="POST" id="form">
           <div class="input-wrapper">
             <label for="name">What is your name?</label>
             <input name="name" class="form-inputs" type="text" required />
@@ -61,13 +61,15 @@
           </div>
           <button id="submit-button" type="submit">Submit</button>
         </form>
+        <h5 id="success">Thanks! I'll be in touch shortly.</h5>
+        <h5 id="error">Woops! Something went wrong. Please try again or contact me on hamish.henare@gmail.com</h5>
       </div>
       <div id="social-wrapper-desktop">
         <h4>
           Connect with me
         </h4>
         <a href="https://github.com/hamishakl" target="_blank" class="navbar-link">Github</a>
-        <a href="https://dribbble.com/HAMISHAKL" target="_blank" class="navbar-link">Dribble</a>
+        <a href="https://dribbble.com/HAMISHAKL" target="_blank" class="navbar-link">Dribbble</a>
         <a
           href="https://www.linkedin.com/in/hamish-h-41556b1aa"
           class="navbar-link"target="_blank" 
@@ -92,5 +94,6 @@
     </footer>
     <script src="assets/scripts/api.js"></script>
     <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/nodemailer.js"></script>
   </body>
 </html>

@@ -552,3 +552,7 @@ text-align: center;
   flex-direction: column;
   align-items: center;
 }
+
+#error, #success {
+  display: none;
+}
