@@ -1,0 +1,19 @@
+{
+  "name": "hamishhenarewebsite",
+  "version": "1.0.0",
+  "description": "Personal portfolio to showcase my web, illustration and graphic design work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamishakl/HamishHenareWebsite.git"
+  },
+  "author": "hamish henare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamishakl/HamishHenareWebsite/issues"
+  },
+  "homepage": "https://github.com/hamishakl/HamishHenareWebsite#readme"
+}

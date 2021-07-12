@@ -126,7 +126,6 @@ font-style: italic;
   color: inherit;
 }
 
-
 .navbar {
   transition: ease-in-out;
   transition-duration: 100ms;
@@ -157,7 +156,7 @@ font-style: italic;
   font-family: futura-pt-bold, sans-serif;
 
   font-weight: 700;
-  
+
   font-style: italic;
   outline: none;
   padding: 0.5em 1em 0.5em 1em;
@@ -262,7 +261,6 @@ font-style: italic;
   justify-content: center;
   align-items: center;
   color: black;
-  
 }
 
 #about-text-wrapper {
@@ -295,8 +293,8 @@ font-style: italic;
 #logo {
   font-family: futura-pt-bold, sans-serif;
 
-font-weight: 700;
-font-style: italic;
+  font-weight: 700;
+  font-style: italic;
 }
 
 #footer-section {
@@ -512,26 +510,27 @@ input:focus,
   align-items: center;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
-#logo-a{
+#logo-a {
   color: inherit;
 }
 
-.navbar-link-desktop{
+.navbar-link-desktop {
   font-family: futura-pt, sans-serif;
 
-font-weight: 500;
+  font-weight: 500;
 
-font-style: normal;
-transition: ease-in-out;
-transition-duration: 100ms;
-text-align: center;
+  font-style: normal;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+  text-align: center;
 }
 
-.navbar-link-desktop:hover{
+.navbar-link-desktop:hover {
   font-size: 1.1em;
   letter-spacing: 2px;
 }
@@ -553,6 +552,23 @@ text-align: center;
   align-items: center;
 }
 
-#error, #success {
-  display: none;
+#message {
+  padding: 0.5em;  
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 3em;
+  font-family: futura-pt, sans-serif;
+  background-color: #1e3d59da;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: italic;
+  border-radius: 0.5em;
+  display: block;
+  transition: ease;
+  transition-duration: 1000ms;
 }
+
+

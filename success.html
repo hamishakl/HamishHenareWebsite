@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/ali0bux.css" />
   </head>
   <body>
+      <h5 id="message">Thanks! I'll be in touch shortly.</h5>
     <header id="navbar-wrapper" class="navbar-top">
       <nav class="navbar">
         <a href="index.html" id="logo-a">
@@ -46,7 +47,7 @@
     <section class="wrapper" id="footer-section">
       <div id="contact-form-wrapper">
         <h4>Let's chat!</h4>
-        <form action="https://us-central1-hamish-portfolio-a1160.cloudfunctions.net/webflowMail" method="POST" id="form">
+        <form action="/assets/scripts/nodemailer.js" method="POST" id="form">
           <div class="input-wrapper">
             <label for="name">What is your name?</label>
             <input name="name" class="form-inputs" type="text" required />
@@ -92,5 +93,6 @@
     </footer>
     <script src="assets/scripts/api.js"></script>
     <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/form.js"></script>
   </body>
 </html>
