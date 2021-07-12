@@ -122,6 +122,11 @@ font-style: italic;
   align-items: center;
 }
 
+.navbar-link-desktop {
+  color: inherit;
+}
+
+
 .navbar {
   transition: ease-in-out;
   transition-duration: 100ms;
@@ -444,14 +449,14 @@ input:focus,
 }
 
 .form-inputs {
-  width: 60%;
+  width: 80%;
   height: 2em;
   transition: ease-in-out;
   transition-duration: 100ms;
 }
 
 .form-inputs:focus {
-  width: 60%;
+  width: 80%;
   border: 2px solid white;
 }
 
@@ -531,7 +536,7 @@ text-align: center;
 }
 
 #contact-form-wrapper {
-  width: 75%;
+  width: 90%;
   height: 60%;
   display: flex;
   flex-direction: column;

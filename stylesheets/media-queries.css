@@ -2,6 +2,10 @@
 }
 
 @media (max-width: 500px) {
+  .navbar-link-desktop {
+    display: none;
+  }
+
   #social-wrapper-desktop{
     visibility: hidden;
     display: none;
