@@ -45,7 +45,7 @@ const navbarChange = () => {
     navColor("#1e3d59", "white", "white", "1", 1);
     linkColor('white')
   } else {
-    navColor("#f5f0e1", "#f5f0e1", "black", "1", 1);
+    navColor("#f5f0e1", "black", "black", "1", 1);
     linkColor('black')
   }
 

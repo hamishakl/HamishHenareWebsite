@@ -489,4 +489,5 @@ input:focus,
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-top: 1.2px solid #000000;
 }
