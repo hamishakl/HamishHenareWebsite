@@ -151,4 +151,10 @@
   .navbar-link {
     padding: 0;
   }
+
+  #hero-text-wrapper {
+    height: 40%;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
