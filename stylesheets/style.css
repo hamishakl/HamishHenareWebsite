@@ -214,6 +214,7 @@ font-style: italic;
   font-weight: 700;
 
   font-style: italic;
+  font-size: 2em;
 }
 
 #footer-section {
@@ -260,6 +261,7 @@ font-style: italic;
   justify-content: center;
   align-items: center;
   color: black;
+  
 }
 
 #about-text-wrapper {
@@ -286,7 +288,6 @@ font-style: italic;
   justify-content: space-evenly;
   display: flex;
   height: 70vh;
-  margin-top: 2em;
 }
 
 #logo {
@@ -300,11 +301,10 @@ font-style: italic;
 #footer-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   height: 100vh;
-  margin-bottom: 10vh;
+  min-height: auto;
 }
 
 #footer-section h4 {
@@ -318,30 +318,7 @@ font-style: italic;
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
-}
-
-#footer-bottom-section {
-  background-image: url("../assets/images/footer-illustration.png");
-  background-size: contain;
-  background-position: center;
-  height: 40vh;
-  width: 150%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#footer-bottom-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1e3d59;
-  width: 40%;
-  height: 20%;
-  z-index: 1;
-  border-color: #f5f0e1;
-  border-style: solid;
-  border-width: 4px;
+  margin-bottom: 1.5em;
 }
 
 #form {
@@ -349,7 +326,7 @@ font-style: italic;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 80%;
+  height: 60%;
   width: 90%;
   color: white;
 }
@@ -484,17 +461,18 @@ input:focus,
 
 #message-wrapper {
   flex-direction: column;
-  min-height: 6em;
+  min-height: 2em;
 }
 
 #message-wrapper input {
   width: 100%;
-  height: 5em;
+  height: 2em;
   margin-top: 1em;
 }
 /* input, button, submit { border:none; }  */
 
 #bottom-nav {
+  z-index: 10;
   opacity: 1;
   height: 10vh;
   position: fixed;
@@ -505,4 +483,20 @@ input:focus,
   flex-direction: row;
   justify-content: space-evenly;
   border-top: 1.2px solid #000000;
+}
+
+#social-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
