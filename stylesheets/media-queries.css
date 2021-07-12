@@ -53,33 +53,3 @@
   }
 
 }
-
-/* @media (min-width: 1024px) {
-  .dribble-link{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    width: 50%;
-  }
-
-  .dribble-item{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    justify-content: center;
-    align-items: center;
-    background: #ffc13b;
-    position: relative;
-    display: flex;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-  }
-
-} */
