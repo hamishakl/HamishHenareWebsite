@@ -28,7 +28,7 @@ const navbarChange = () => {
 
   if (y >= vh && y < dribbleShotsLength) {
     navColor("#f5f0e1", "#f5f0e1", "black", "0.5", 0);
-  } else if (y > vh2 && y < about ) {
+  } else if (y > vh2 && y < about) {
     navColor("#1e3d59", "white", "white", "1", 0);
   } else {
     navColor("#f5f0e1", "black", "black", "1", 0);
@@ -39,19 +39,24 @@ const navbarChange = () => {
   if (footerY >= afterVh && footerY < dribbleShotsLength) {
     navColor("#f5f0e1", "#f5f0e1", "black", "0.5", 1);
     linkColor("black", "#f5f0e1");
-    document.getElementById('nav-wrapper').style.display = 'flex'
-    document.getElementById('social-wrapper').style.display = 'none'
+    document.getElementById("nav-wrapper").style.display = "flex";
+    document.getElementById("social-wrapper").style.display = "none";
   } else if (footerY > dribbleShotsLength) {
     navColor("#1e3d59", "white", "white", "1", 1);
     linkColor("white", "white");
-    document.getElementById('nav-wrapper').style.display = 'none'
-    document.getElementById('social-wrapper').style.display = 'flex'
+    document.getElementById("nav-wrapper").style.display = "none";
+    document.getElementById("social-wrapper").style.display = "flex";
   } else {
     navColor("#f5f0e1", "black", "black", "1", 1);
     linkColor("black", "black");
-    document.getElementById('nav-wrapper').style.display = 'flex'
-    document.getElementById('social-wrapper').style.display = 'none'
+    document.getElementById("nav-wrapper").style.display = "flex";
+    document.getElementById("social-wrapper").style.display = "none";
   }
+};
+
+const navbarAdjust = () => {
+  document.getElementById("nav-wrapper").style.display = "flex";
+  document.getElementById("social-wrapper").style.display = "none";
 };
 
 window.onscroll = () => {

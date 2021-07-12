@@ -81,6 +81,7 @@ const getDribbleDimensions = () => {
   return dribbleShotsHeight;
 };
 
+
 window.onload = () => {
-  apiLoad(), getDribbleDimensions;
+  apiLoad(), getDribbleDimensions(), navbarAdjust();
 };
