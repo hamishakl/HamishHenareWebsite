@@ -16,6 +16,10 @@
         <a href="index.html" id="logo-a">
           <h4 id="logo">Hamish Henare</h4>
         </a>
+        <div id="desktop-nav-wrapper">
+          <a href="#work-section" class="navbar-link-desktop">Work</a>
+          <a href="#footer-section" class="navbar-link-desktop">Contact</a>
+        </div>
       </nav>
     </header>
     <section class="wrapper" id="about-section">
@@ -39,22 +43,36 @@
       <div id="dribble-wrapper"></div>
     </section>
     <section class="wrapper" id="footer-section">
-      <h4>Let's chat!</h4>
-      <form action="" id="form">
-        <div class="input-wrapper">
-          <label for="name">What is your name?</label>
-          <input name="name" class="form-inputs" type="text" required />
-        </div>
-        <div class="input-wrapper">
-          <label for="email">What is your email?</label>
-          <input name="email" class="form-inputs" type="email" required />
-        </div>
-        <div class="input-wrapper" id="message-wrapper">
-          <label for="message">How can I help you?</label>
-          <input name="message" class="form-inputs" type="text" required />
-        </div>
-        <button id="submit-button" type="submit">Submit</button>
-      </form>
+      <div id="contact-form-wrapper">
+        <h4>Let's chat!</h4>
+        <form action="" id="form">
+          <div class="input-wrapper">
+            <label for="name">What is your name?</label>
+            <input name="name" class="form-inputs" type="text" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">What is your email?</label>
+            <input name="email" class="form-inputs" type="email" required />
+          </div>
+          <div class="input-wrapper" id="message-wrapper">
+            <label for="message">How can I help you?</label>
+            <input name="message" class="form-inputs" type="text" required />
+          </div>
+          <button id="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="social-wrapper-desktop">
+        <h4>
+          Connect with me
+        </h4>
+        <a href="https://github.com/hamishakl" class="navbar-link">Github</a>
+        <a href="https://dribbble.com/HAMISHAKL" class="navbar-link">Dribble</a>
+        <a
+          href="https://www.linkedin.com/in/hamish-h-41556b1aa"
+          class="navbar-link"
+          >LinkedIn</a
+        >
+      </div>
     </section>
     <footer class="navbar" id="bottom-nav">
       <div id="nav-wrapper">
@@ -64,7 +82,11 @@
       <div id="social-wrapper">
         <a href="https://github.com/hamishakl" class="navbar-link">Github</a>
         <a href="https://dribbble.com/HAMISHAKL" class="navbar-link">Dribble</a>
-        <a href="https://www.linkedin.com/in/hamish-h-41556b1aa" class="navbar-link">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/hamish-h-41556b1aa"
+          class="navbar-link"
+          >LinkedIn</a
+        >
       </div>
     </footer>
     <script src="assets/scripts/api.js"></script>

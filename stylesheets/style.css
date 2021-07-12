@@ -490,6 +490,7 @@ input:focus,
   flex-direction: row;
   justify-content: space-evenly;
   border-top: 1.2px solid #000000;
+  border-bottom: 0px;
 }
 
 #social-wrapper {
@@ -515,3 +516,20 @@ a, a:visited {
 #logo-a{
   color: inherit;
 }
+
+.navbar-link-desktop{
+  font-family: futura-pt, sans-serif;
+
+font-weight: 500;
+
+font-style: normal;
+transition: ease-in-out;
+transition-duration: 100ms;
+text-align: center;
+}
+
+.navbar-link-desktop:hover{
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
