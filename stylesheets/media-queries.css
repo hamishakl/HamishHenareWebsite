@@ -104,7 +104,7 @@
   }
 
   #bottom-nav {
-    background-image: url("assets/images/image.png");
+    background-image: url("../assets/images/footer.png");
     background-size: contain;
     height: 50vh;
   }
