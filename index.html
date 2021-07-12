@@ -15,7 +15,6 @@
       <nav id="navbar">
         <h4 id="logo">Hamish Henare</h4>
         <div id="link-wrapper">
-
           <a href="#work-section" class="navbar-link">Work</a>
           <a href="" class="navbar-link">Contact</a>
         </div>
@@ -29,12 +28,13 @@
         <div id="about-text-wrapper">
           <div id="border"></div>
           <br />
-          <h1 id="hero-text">Web Designer<br>Auckland, NZ.</h1>
+          <h1 id="hero-text">Web Designer<br />Auckland, NZ.</h1>
           <br />
           <div id="border"></div>
           <br />
           <p>
-            Kia ora! I'm Hamish - a web & print designer & developer based in Auckland, New Zealand.
+            Kia ora! I'm Hamish - a web & print designer & developer based in
+            Auckland, New Zealand.
           </p>
           <br />
           <p>I write code, enjoy scribbling and love creating stuff.</p>
@@ -50,31 +50,43 @@
     <section class="wrapper" id="footer-section">
       <h4>Let's chat!</h4>
       <form action="" id="form">
-        <input
+        <div class="input-wrapper">
+
+          <label for="name">What is your name?</label>
+          <input
+          name="name"
           class="form-inputs"
-          placeholder="What is your name?"
           type="text"
           required
-        />
-        <input
+          />
+        </div>
+        <div class="input-wrapper">
+
+          <label for="email">What is your email?</label>
+          <input
+          name="email"
           class="form-inputs"
-          placeholder="What is your email address?"
           type="email"
           required
-        />
-        <input
+          />
+        </div>
+        <div class="input-wrapper" id="message-wrapper">
+
+          <label for="message">How can I help you?</label>
+          <input
+          name="message"
           class="form-inputs"
-          placeholder="How can I help you?"
           type="text"
           required
-        />
+          />
+        </div>
         <button id="submit-button" type="submit">Submit</button>
       </form>
-      <div id="footer-bottom-section">
+      <!-- <div id="footer-bottom-section">
         <div id="footer-bottom-wrapper">
           <p>Thank you</p>
         </div>
-      </div>
+      </div> -->
     </section>
     <script src="assets/scripts/api.js"></script>
     <script src="assets/scripts/index.js"></script>
