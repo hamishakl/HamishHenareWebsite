@@ -78,7 +78,6 @@ const webOrPrint = (element) => {
 const getDribbleDimensions = () => {
   const dribbleShotsHeight =
     document.getElementById("dribble-wrapper").clientHeight;
-  console.log(dribbleShotsHeight);
   return dribbleShotsHeight;
 };
 
