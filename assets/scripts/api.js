@@ -60,7 +60,7 @@ const webOrPrint = (element) => {
                 <img class="dribble-image" src="${element.images.hidpi}"/>
                 </div>
         </div>
-              `
+              `;
       } else {
         return `
                 <a class="dribble-link" href="${element.html_url}">
@@ -71,20 +71,17 @@ const webOrPrint = (element) => {
                 </a>
               `;
       }
-    }ho
+    }
   }
 };
 
 const getDribbleDimensions = () => {
-  const imageHeight =
-        document.getElementsByClassName("dribble-image")[0].height;
-  const dribbleShotsAmount = document.getElementsByClassName('dribble-image').length
-
-  const arr = [imageHeight, dribbleShotsAmount]
-
-  return arr
-}
+  const dribbleShotsHeight =
+    document.getElementById("dribble-wrapper").clientHeight;
+  console.log(dribbleShotsHeight);
+  return dribbleShotsHeight;
+};
 
 window.onload = () => {
-  apiLoad()
+  apiLoad(), getDribbleDimensions;
 };

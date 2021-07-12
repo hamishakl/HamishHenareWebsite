@@ -4,12 +4,10 @@ const navbarChange = () => {
     document.documentElement.clientHeight || 0,
     window.innerHeight || 0
   );
-  const dribbleHeight = getDribbleDimensions()[0];
-  const dribbleShotsAmount = getDribbleDimensions()[1];
-  const dribbleShotsLength = vh + dribbleHeight * dribbleShotsAmount;
+  const dribbleHeight = getDribbleDimensions();
+  const dribbleShotsLength = vh + dribbleHeight;
   const vh2 = vh * 2;
   const about = vh * 3;
-  const contact = vh * 4;
   const navbar = document.getElementById("navbar");
   const links = document.getElementsByClassName("navbar-link");
   const linkWrapper = document.getElementById("link-wrapper");
@@ -33,7 +31,6 @@ const navbarChange = () => {
     navbar.style.color = "white";
     navbar.style.backgroundColor = "#1e3d59";
     linkColor("white");
-  } else if (y > about && y < contact) {
   } else {
     navbar.style.opacity = "1";
     navbar.style.backgroundColor = "#f5f0e1";
