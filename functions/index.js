@@ -25,10 +25,10 @@ exports.webflowMail = functions.https.onRequest((req, res) => {
     // Error
     if (err) {
       console.log(err);
-      return res.redirect("https://hamishakl.github.io/HamishHenareWebsite/success.html");
+      return res.redirect("https://hamishakl.github.io/HamishHenareWebsite/error.html");
     }
 
     // Success
-    return res.redirect("https://hamishakl.github.io/HamishHenareWebsite/error.html");
+    return res.redirect("https://hamishakl.github.io/HamishHenareWebsite/success.html");
   });
 });
