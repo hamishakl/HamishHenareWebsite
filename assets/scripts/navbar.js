@@ -28,7 +28,8 @@ const navbarChange = () => {
 
   if (y >= vh && y < dribbleShotsLength) {
     navColor("#f5f0e1", "#f5f0e1", "black", "0.5", 0);
-  } else if (y > vh2 && y < about) {
+  } else if (y >= dribbleShotsLength*0.98) {
+    console.log('dribble');
     navColor("#1e3d59", "white", "white", "1", 0);
   } else {
     navColor("#f5f0e1", "black", "black", "1", 0);
