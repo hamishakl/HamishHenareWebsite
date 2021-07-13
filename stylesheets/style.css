@@ -106,6 +106,10 @@ font-weight: 700;
 font-style: italic;
  */
 
+ html {
+  scroll-behavior: smooth;
+}
+
 #navbar-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
