@@ -292,7 +292,8 @@ font-style: italic;
 
 #logo {
   font-family: futura-pt-bold, sans-serif;
-
+  transition: ease-in-out;
+  transition-duration: 100ms;
   font-weight: 700;
   font-style: italic;
 }
@@ -531,8 +532,11 @@ a:visited {
 }
 
 .navbar-link-desktop:hover {
-  font-size: 1.1em;
   letter-spacing: 2px;
+}
+
+#logo:hover{
+  color: #ff6e40;
 }
 
 #contact-form-wrapper {

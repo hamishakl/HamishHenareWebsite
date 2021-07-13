@@ -2,6 +2,7 @@
 }
 
 @media (max-width: 500px) {
+
   .navbar-link-desktop {
     display: none;
   }
@@ -61,6 +62,19 @@
 
 
 @media (min-width: 500px) {
+  #logo {
+    font-size: 2em;
+  }
+
+  #hero-text {
+    font-size: 3.5em;
+  }
+  #about-text-wrapper p {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 1em;
+  }
+
   #bottom-nav {
     position: static;
   }
@@ -153,8 +167,13 @@
   }
 
   #hero-text-wrapper {
-    height: 40%;
+    height: auto;
     align-items: flex-start;
     justify-content: space-around;
   }
+
+  .navbar-link-desktop {
+    font-size: 1.5em;
+  }
+
 }
