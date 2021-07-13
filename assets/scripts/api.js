@@ -4,7 +4,7 @@ const apiLoad = () => {
     "88a8d38855edc06b5bf5e20ae720ca304ee7edcb5858491b1eeafdf3c8be8f9c";
 
   const dribbleWrapper = document.getElementById("dribble-wrapper");
-  fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`, {mode: 'no-cors'})
+  fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     .then(function (response) {
       
       return response.json();
