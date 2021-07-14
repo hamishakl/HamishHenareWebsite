@@ -15,6 +15,7 @@ const apiLoad = () => {
           dribbleWrapper.innerHTML += webOrPrint(element);
         });
       }
+      loadingScreen()
     })
     .catch(function (err) {
       console.warn("Something went wrong.", err);
@@ -82,6 +83,13 @@ const getDribbleDimensions = () => {
     document.getElementById("dribble-wrapper").clientHeight;
   return dribbleShotsHeight;
 };
+
+const loadingScreen = () => {
+  if (getDribbleDimensions() !== 0) {
+    document.getElementById('loading-wrapper').style.display = 'none'
+    console.log('hit')
+  }
+}
 
 window.onload = () => {
   apiLoad(), getDribbleDimensions(), navbarAdjust()

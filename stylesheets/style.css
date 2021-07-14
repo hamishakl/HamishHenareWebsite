@@ -594,3 +594,15 @@ a:visited {
 }
 
 
+#loading-wrapper {
+  width: 100vw;
+  height: 100vw;
+  background-color: #000000;
+  position: fixed;
+  z-index: 200;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
