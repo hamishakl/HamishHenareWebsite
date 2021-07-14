@@ -67,10 +67,10 @@
   }
 
   #hero-text {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   #about-text-wrapper p {
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1em;
     margin-bottom: 1em;
   }
@@ -173,7 +173,7 @@
   }
 
   .navbar-link-desktop {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
 }
