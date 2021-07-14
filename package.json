@@ -2,6 +2,7 @@
   "name": "hamishhenarewebsite",
   "version": "1.0.0",
   "description": "Personal portfolio to showcase my web, illustration and graphic design work.",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,3 @@
-
 const apiLoad = () => {
   const accessToken =
     "88a8d38855edc06b5bf5e20ae720ca304ee7edcb5858491b1eeafdf3c8be8f9c";
@@ -6,7 +5,6 @@ const apiLoad = () => {
   const dribbleWrapper = document.getElementById("dribble-wrapper");
   fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
     .then(function (response) {
-      
       return response.json();
     })
     .then(function (data) {
@@ -15,7 +13,7 @@ const apiLoad = () => {
           dribbleWrapper.innerHTML += webOrPrint(element);
         });
       }
-      loadingScreen()
+      loadingScreen();
     })
     .catch(function (err) {
       console.warn("Something went wrong.", err);
@@ -85,12 +83,21 @@ const getDribbleDimensions = () => {
 };
 
 const loadingScreen = () => {
+  const loader = (document.getElementById("loading-wrapper"))
+
   if (getDribbleDimensions() !== 0) {
-    document.getElementById('loading-wrapper').style.display = 'none'
-    console.log('hit')
+    setTimeout(function () {
+      loader.style.opacity = "0";
+      
+      if (loader.style.opacity == "0") {
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 300);
+      }
+    }, 500);
   }
-}
+};
 
 window.onload = () => {
-  apiLoad(), getDribbleDimensions(), navbarAdjust()
+  apiLoad(), getDribbleDimensions(), navbarAdjust();
 };

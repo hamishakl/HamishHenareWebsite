@@ -227,15 +227,6 @@ font-style: italic;
   font-size: 2em;
 }
 
-#drawing-section {
-  background-color: #ffc13b;
-  color: black;
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: url("../assets/images/Untitled_Artwork\ 4.png");
-}
-
 #contact-section {
   background-color: #f5f0e1;
   color: black;
@@ -596,13 +587,52 @@ a:visited {
 
 #loading-wrapper {
   width: 100vw;
-  height: 100vw;
-  background-color: #000000;
+  height: 100vh;
+  background-color: #f5f0e1;
+  color: black;
   position: fixed;
   z-index: 200;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

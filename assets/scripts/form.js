@@ -1,6 +1,6 @@
-const success = () => {
-  const message = document.getElementById("message");
-
+const success = (a) => {
+  const message = document.getElementById(a);
+  console.log(message)
   setTimeout(function () {
     message.style.opacity = "0";
 
@@ -13,5 +13,5 @@ const success = () => {
 };
 
 window.onload = () => {
-  success();
+  success("message");
 };
