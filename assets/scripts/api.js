@@ -88,7 +88,15 @@ const loadingScreen = () => {
   if (getDribbleDimensions() !== 0) {
     setTimeout(function () {
       loader.style.opacity = "0";
-      
+      if (loader.style.opacity == "0") {
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 200);
+      }
+    }, 400);
+  } else {
+    setTimeout(function () {
+      loader.style.opacity = "0";
       if (loader.style.opacity == "0") {
         setTimeout(() => {
           loader.style.display = "none";
