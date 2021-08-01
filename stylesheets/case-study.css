@@ -1,0 +1,16 @@
+#case-study__img{
+    
+}
+
+.case-study__section{
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.case-study__heading{
+    font-size: 1.8em;
+}
+
+.case-study__text{
+    font-weight: 0;
+}

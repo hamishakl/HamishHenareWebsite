@@ -4,12 +4,12 @@ const apiLoad = () => {
 
   const dribbleWrapper = document.getElementById("dribble-wrapper");
   fetch(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      if (data.length > 0) {
-        data.forEach((element) => {
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    if (data.length > 0) {
+      data.forEach((element) => {
           dribbleWrapper.innerHTML += webOrPrint(element);
         });
       }
