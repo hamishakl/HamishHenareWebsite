@@ -67,6 +67,10 @@
 
 @media (min-width: 500px) {
 
+  .case-study__section{
+    border-bottom: none;
+  }
+
   #southcity-case-study,
   #piritahi-case-study{
     display: none;
