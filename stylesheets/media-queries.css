@@ -3,6 +3,11 @@
 
 @media (max-width: 500px) {
 
+  #southcity-desktop__section,
+  #piritahi-desktop__section {
+    display: none;
+  }
+
   .navbar-link-desktop {
     display: none;
   }
