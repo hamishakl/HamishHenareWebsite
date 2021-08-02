@@ -56,3 +56,40 @@
   font-size: 1.4em;
   margin-bottom: 10px;
 }
+
+
+#test-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+#piritahi-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+#southcity__div{
+    background-image: url('../assets/images/5b0214dadcae79013b40a378_Webp.net-compress-image-1.jpg');
+}
+
+.case-study__div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 100%;
+}
+
+.case-study__imgdiv{
+    background-image: url('../assets/images/6088a238f6b62c0e04ae2170_whatwedo.jpeg');
+    background-size: cover;
+    background-position: center;
+}
