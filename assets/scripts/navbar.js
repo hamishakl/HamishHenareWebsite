@@ -1,3 +1,9 @@
+const getWorkDimensions = () => {
+  const workSectionHeight =
+    document.getElementById("case-study").clientHeight;
+  return workSectionHeight;
+};
+
 const navbarChange = () => {
   const y = window.scrollY;
   const vh = Math.max(
@@ -5,7 +11,7 @@ const navbarChange = () => {
     window.innerHeight || 0
   );
   const footerY = y + vh;
-  const dribbleHeight = getDribbleDimensions();
+  const dribbleHeight = getDribbleDimensions() + getWorkDimensions();
   const dribbleShotsLength = vh + dribbleHeight;
   const vh2 = vh * 2;
   const about = vh * 3;
