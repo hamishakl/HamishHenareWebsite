@@ -176,7 +176,7 @@
 
   .case-study__section{
     /* flex-direction: row !important; */
-    height: 100vh;
+    min-height: 120vh;
     justify-content: space-evenly !important;
   }
 
