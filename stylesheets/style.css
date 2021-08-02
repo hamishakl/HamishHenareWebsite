@@ -423,6 +423,7 @@ font-style: normal;
   justify-content: center;
   align-items: center;
   color: black;
+  border-bottom: #000000 1px solid;
 }
 
 #about-text-wrapper {

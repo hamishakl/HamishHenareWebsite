@@ -60,7 +60,6 @@
 }
 
 
-
 @media (min-width: 500px) {
   #logo {
     font-size: 2em;
@@ -175,4 +174,52 @@
     font-size: 1.4em;
   }
 
+  .case-study__section{
+    /* flex-direction: row !important; */
+    height: 100vh;
+    justify-content: space-evenly !important;
+  }
+
+  .case-study__img{
+    max-width: 70%;
+  }
+
+  #southcity-case-study{
+    /* flex-direction: row-reverse !important; */
+  }
+
+  .case-study__text-div{
+    justify-content: space-evenly;
+    height: 50%;
+    align-items: center !important;
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .case-study__text{
+    font-size: 2em;
+  }
+
+  .case-study__subheading {
+    font-size: 2.3em;
+  }
+
+  .case-study__heading{
+    font-size: 3.5em;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .case-study__text-div{
+    justify-content: space-evenly;
+    height: 50%;
+    align-items: center !important;
+    max-width: 40%;
+    text-align: left;
+  }
+}
+
+a {
+  cursor: pointer;
 }
