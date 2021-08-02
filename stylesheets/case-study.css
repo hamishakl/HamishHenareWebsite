@@ -1,16 +1,57 @@
-#case-study__img{
-    
+.case-study__img {
+  width: 100%;
 }
 
-.case-study__section{
-    padding: 0;
-    justify-content: flex-start;
+.case-study__section {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: #f5f0e1;
 }
 
-.case-study__heading{
-    font-size: 1.8em;
+.case-study__heading {
+  font-size: 2.5em;
+  font-family: mencken-std, sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
-.case-study__text{
-    font-weight: 0;
+.case-study__link{
+    color: black;
+    text-decoration: underline;
+}
+
+
+.case-study__text {
+  font-family: mencken-std-head, sans-serif;
+
+  font-size: 1em;
+  line-height: 1.2em;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.case-study__text-div {
+  width: 80%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.case-study__subheading {
+  font-family: mencken-std-head, sans-serif;
+
+  font-weight: 200;
+
+  font-style: italic;
+  font-size: 1.4em;
+  margin-bottom: 10px;
 }

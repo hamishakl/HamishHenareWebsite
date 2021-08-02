@@ -104,7 +104,172 @@ font-family: futura-pt-bold, sans-serif;
 font-weight: 700;
 
 font-style: italic;
- */
+ 
+
+Mencken Std Regular
+
+font-family: mencken-std, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Italic
+
+font-family: mencken-std, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Mencken Std Bold Italic
+
+font-family: mencken-std, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Mencken Std Bold
+
+font-family: mencken-std, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Mencken Std Head Italic
+
+font-family: mencken-std-head, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Mencken Std Head Regular
+
+font-family: mencken-std-head, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Head Bold
+
+font-family: mencken-std-head, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Mencken Std Head Bold Italic
+
+font-family: mencken-std-head, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Mencken Std Text Bold Italic
+
+font-family: mencken-std-text, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Mencken Std Text Italic
+
+font-family: mencken-std-text, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Mencken Std Text Bold
+
+font-family: mencken-std-text, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Mencken Std Text Regular
+
+font-family: mencken-std-text, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Head Compress Regular
+
+font-family: mencken-std-head-compress, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Head Compress Bold
+
+font-family: mencken-std-head-compress, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Mencken Std Head Narrow Bold
+
+font-family: mencken-std-head-narrow, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Mencken Std Head Narrow Regular
+
+font-family: mencken-std-head-narrow, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Narrow Regular
+
+font-family: mencken-std-narrow, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Mencken Std Narrow Bold
+
+font-family: mencken-std-narrow, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+*/
+
+*/
 
  html {
   scroll-behavior: smooth;

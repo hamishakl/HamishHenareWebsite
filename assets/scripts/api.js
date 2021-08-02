@@ -28,9 +28,7 @@ const webOrPrint = (element) => {
       if (mql.matches === false) {
         return `
         <div class="dribble-wrapper">
-        <a href="${element.html_url}" class="dribble-button url-link-button" target="_blank">
-        info
-        </a>
+        
                <div class="dribble-link" href="${element.html_url}">
                 <div class="dribble-item">
                 <p class="dribble-text">${element.title}</p>
@@ -52,9 +50,7 @@ const webOrPrint = (element) => {
       if (mql.matches === false) {
         return `
         <div class="dribble-wrapper">
-        <a href="${element.html_url}" class="dribble-button url-link-button" target="_blank">
-        info
-        </a>
+       
                <div class="dribble-link" href="${element.html_url}">
                 <div class="dribble-item">
                 <p class="dribble-text">${element.title}</p>
