@@ -177,7 +177,8 @@
   .case-study__section{
     /* flex-direction: row !important; */
     min-height: 120vh;
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
+    
   }
 
   .case-study__img{
@@ -191,9 +192,7 @@
   .case-study__text-div{
     justify-content: space-evenly;
     height: 50%;
-    align-items: center !important;
     max-width: 70%;
-    text-align: center;
   }
 
   .case-study__text{
@@ -202,6 +201,7 @@
 
   .case-study__subheading {
     font-size: 2.3em;
+    font-weight: 700;
   }
 
   .case-study__heading{
@@ -212,11 +212,8 @@
 
 @media(min-width: 1200px) {
   .case-study__text-div{
-    justify-content: space-evenly;
     height: 50%;
-    align-items: center !important;
     max-width: 40%;
-    text-align: left;
   }
 }
 
