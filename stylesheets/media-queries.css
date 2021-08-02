@@ -61,7 +61,12 @@
 
 
 @media (min-width: 500px) {
-  
+
+  #southcity-case-study,
+  #piritahi-case-study{
+    display: none;
+  }
+
   #logo {
     font-size: 2em;
   }
