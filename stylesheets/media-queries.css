@@ -248,6 +248,11 @@
     max-width: 100%;
   }
 
+  #body{
+    transition: ease;
+    transition-duration: 100ms;
+  }
+
   #southcity-desktop__section,
   #piritahi-desktop__section{
     width: 100%;
