@@ -230,6 +230,36 @@
     height: 50%;
     max-width: 40%;
   }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* grid-template-rows: 10% 70% 20%; */
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "nav nav nav"
+      ". body ."
+      "footer footer footer";
+  }
+  
+  .body{
+    grid-area: body;
+    max-width: 100%;
+  }
+
+  #southcity-desktop__section,
+  #piritahi-desktop__section{
+    width: 100%;
+  }
+  
+  #navbar-wrapper{
+    grid-area: nav;
+  }
+
+  #bottom-nav{
+    grid-area: footer;
+  }
 }
 
 a {
