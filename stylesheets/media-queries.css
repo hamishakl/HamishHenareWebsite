@@ -225,7 +225,7 @@
 }
 
 
-@media(min-width: 1200px) {
+@media(min-width: 1800px) {
   .case-study__text-div{
     height: 50%;
     max-width: 40%;
@@ -251,6 +251,7 @@
   #body{
     transition: ease;
     transition-duration: 100ms;
+    background-color: #f5f0e1;
   }
 
   #southcity-desktop__section,
